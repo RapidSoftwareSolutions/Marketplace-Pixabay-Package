@@ -1,0 +1,700 @@
+{
+  "package": "Pixabay",
+  "tagline": "Pixabay API Package",
+  "description": "",
+  "image": "http://logo.clearbit.com/pixabay.com?s=320",
+  "keywords": [
+    "API"
+  ],
+  "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-Pixabay-Package",
+  "accounts": {
+    "domain": "",
+    "credentials": [
+      "apiKey"
+    ]
+  },
+  "blocks": [
+    {
+      "name": "searchImages",
+      "description": "Search images.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Your Pixabay API key.",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "A URL encoded search term. If omitted, all images are returned. This value may not exceed 100 characters. Example: `yellow+flower`",
+          "required": false
+        },
+        {
+          "name": "lang",
+          "type": "String",
+          "info": "Language code of the language to be searched in. Accepted values: `cs, da, de, en, es, fr, id, it, hu, nl, no, pl, pt, ro, sk, fi, sv, tr, vi, th, bg, ru, el, ja, ko, zh`. Default: `en`",
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "info": "ID, hash ID, or a comma separated list of values for retrieving specific images. In a comma separated list, IDs and hash IDs cannot be used together.",
+          "required": false
+        },
+        {
+          "name": "highResolution",
+          "type": "Boolean",
+          "info": "Choose between retrieving high resolution images and image details. When selecting details, you can access images up to a dimension of 960 x 720 px.",
+          "required": false
+        },
+        {
+          "name": "orientation",
+          "type": "String",
+          "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "String",
+          "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
+          "required": false
+        },
+        {
+          "name": "minWidth",
+          "type": "String",
+          "info": "Minimum image width. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "minHeight",
+          "type": "String",
+          "info": "Minimum image height. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "editorsChoice",
+          "type": "String",
+          "info": "Select images that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "safesearch",
+          "type": "String",
+          "info": "A flag indicating that only images suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "order",
+          "type": "String",
+          "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
+          "required": false
+        },
+        {
+          "name": "page",
+          "type": "String",
+          "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "type": "String",
+          "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "success",
+          "info": "Success"
+        },
+        {
+          "name": "error",
+          "info": "Error"
+        }
+      ]
+    },
+    {
+      "name": "searchPhotos",
+      "description": "Search photos.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Your Pixabay API key.",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "A URL encoded search term. If omitted, all photos are returned. This value may not exceed 100 characters. Example: `yellow+flower`",
+          "required": false
+        },
+        {
+          "name": "lang",
+          "type": "String",
+          "info": "Language code of the language to be searched in. Accepted values: `cs, da, de, en, es, fr, id, it, hu, nl, no, pl, pt, ro, sk, fi, sv, tr, vi, th, bg, ru, el, ja, ko, zh`. Default: `en`",
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "info": "ID, hash ID, or a comma separated list of values for retrieving specific images. In a comma separated list, IDs and hash IDs cannot be used together.",
+          "required": false
+        },
+        {
+          "name": "highResolution",
+          "type": "Boolean",
+          "info": "Choose between retrieving high resolution images and image details. When selecting details, you can access images up to a dimension of 960 x 720 px. ",
+          "required": false
+        },
+        {
+          "name": "orientation",
+          "type": "String",
+          "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "String",
+          "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
+          "required": false
+        },
+        {
+          "name": "minWidth",
+          "type": "String",
+          "info": "Minimum image width. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "minHeight",
+          "type": "String",
+          "info": "Minimum image height. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "editorsChoice",
+          "type": "String",
+          "info": "Select photos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "safesearch",
+          "type": "String",
+          "info": "A flag indicating that only photos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "order",
+          "type": "String",
+          "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
+          "required": false
+        },
+        {
+          "name": "page",
+          "type": "String",
+          "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "type": "String",
+          "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "success",
+          "info": "Success"
+        },
+        {
+          "name": "error",
+          "info": "Error"
+        }
+      ]
+    },
+    {
+      "name": "searchIllustrations",
+      "description": "Search Illustrations.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Your Pixabay API key.",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "A URL encoded search term. If omitted, all illustrations are returned. This value may not exceed 100 characters. Example: `yellow+flower`",
+          "required": false
+        },
+        {
+          "name": "lang",
+          "type": "String",
+          "info": "Language code of the language to be searched in. Accepted values: `cs, da, de, en, es, fr, id, it, hu, nl, no, pl, pt, ro, sk, fi, sv, tr, vi, th, bg, ru, el, ja, ko, zh`. Default: `en`",
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "info": "ID, hash ID, or a comma separated list of values for retrieving specific images. In a comma separated list, IDs and hash IDs cannot be used together.",
+          "required": false
+        },
+        {
+          "name": "highResolution",
+          "type": "Boolean",
+          "info": "Choose between retrieving high resolution images and image details. When selecting details, you can access images up to a dimension of 960 x 720 px. ",
+          "required": false
+        },
+        {
+          "name": "orientation",
+          "type": "String",
+          "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "String",
+          "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
+          "required": false
+        },
+        {
+          "name": "minWidth",
+          "type": "String",
+          "info": "Minimum image width. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "minHeight",
+          "type": "String",
+          "info": "Minimum image height. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "editorsChoice",
+          "type": "String",
+          "info": "Select illustrations that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "safesearch",
+          "type": "String",
+          "info": "A flag indicating that only illustrations suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "order",
+          "type": "String",
+          "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
+          "required": false
+        },
+        {
+          "name": "page",
+          "type": "String",
+          "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "type": "String",
+          "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "success",
+          "info": "Success"
+        },
+        {
+          "name": "error",
+          "info": "Error"
+        }
+      ]
+    },
+    {
+      "name": "searchVectorImages",
+      "description": "Search vector images.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Your Pixabay API key.",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "A URL encoded search term. If omitted, all images are returned. This value may not exceed 100 characters. Example: `yellow+flower`",
+          "required": false
+        },
+        {
+          "name": "lang",
+          "type": "String",
+          "info": "Language code of the language to be searched in. Accepted values: `cs, da, de, en, es, fr, id, it, hu, nl, no, pl, pt, ro, sk, fi, sv, tr, vi, th, bg, ru, el, ja, ko, zh`. Default: `en`",
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "info": "ID, hash ID, or a comma separated list of values for retrieving specific images. In a comma separated list, IDs and hash IDs cannot be used together.",
+          "required": false
+        },
+        {
+          "name": "highResolution",
+          "type": "Boolean",
+          "info": "Choose between retrieving high resolution images and image details. When selecting details, you can access images up to a dimension of 960 x 720 px. ",
+          "required": false
+        },
+        {
+          "name": "orientation",
+          "type": "String",
+          "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "String",
+          "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
+          "required": false
+        },
+        {
+          "name": "minWidth",
+          "type": "String",
+          "info": "Minimum image width. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "minHeight",
+          "type": "String",
+          "info": "Minimum image height. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "editorsChoice",
+          "type": "String",
+          "info": "Select images that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "safesearch",
+          "type": "String",
+          "info": "A flag indicating that only images suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "order",
+          "type": "String",
+          "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
+          "required": false
+        },
+        {
+          "name": "page",
+          "type": "String",
+          "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "type": "String",
+          "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "success",
+          "info": "Success"
+        },
+        {
+          "name": "error",
+          "info": "Error"
+        }
+      ]
+    },
+    {
+      "name": "searchVideos",
+      "description": "Search videos.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Your Pixabay API key.",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "A URL encoded search term. If omitted, all videos are returned. This value may not exceed 100 characters. Example: `yellow+flower`",
+          "required": false
+        },
+        {
+          "name": "lang",
+          "type": "String",
+          "info": "Language code of the language to be searched in. Accepted values: `cs, da, de, en, es, fr, id, it, hu, nl, no, pl, pt, ro, sk, fi, sv, tr, vi, th, bg, ru, el, ja, ko, zh`. Default: `en`",
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "info": "ID or a comma separated list of values for retrieving specific videos.",
+          "required": false
+        },
+        {
+          "name": "orientation",
+          "type": "String",
+          "info": "Whether an video is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "String",
+          "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
+          "required": false
+        },
+        {
+          "name": "minWidth",
+          "type": "String",
+          "info": "Minimum video width. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "minHeight",
+          "type": "String",
+          "info": "Minimum video height. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "editorsChoice",
+          "type": "String",
+          "info": "Select videos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "safesearch",
+          "type": "String",
+          "info": "A flag indicating that only videos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "order",
+          "type": "String",
+          "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
+          "required": false
+        },
+        {
+          "name": "page",
+          "type": "String",
+          "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "type": "String",
+          "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "success",
+          "info": "Success"
+        },
+        {
+          "name": "error",
+          "info": "Error"
+        }
+      ]
+    },
+    {
+      "name": "searchAnimations",
+      "description": "Search animation.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Your Pixabay API key.",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "A URL encoded search term. If omitted, all videos are returned. This value may not exceed 100 characters. Example: `yellow+flower`",
+          "required": false
+        },
+        {
+          "name": "lang",
+          "type": "String",
+          "info": "Language code of the language to be searched in. Accepted values: `cs, da, de, en, es, fr, id, it, hu, nl, no, pl, pt, ro, sk, fi, sv, tr, vi, th, bg, ru, el, ja, ko, zh`. Default: `en`",
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "info": "ID or a comma separated list of values for retrieving specific videos.",
+          "required": false
+        },
+        {
+          "name": "orientation",
+          "type": "String",
+          "info": "Whether an video is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "String",
+          "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
+          "required": false
+        },
+        {
+          "name": "minWidth",
+          "type": "String",
+          "info": "Minimum video width. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "minHeight",
+          "type": "String",
+          "info": "Minimum video height. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "editorsChoice",
+          "type": "String",
+          "info": "Select videos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "safesearch",
+          "type": "String",
+          "info": "A flag indicating that only videos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "order",
+          "type": "String",
+          "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
+          "required": false
+        },
+        {
+          "name": "page",
+          "type": "String",
+          "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "type": "String",
+          "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "success",
+          "info": "Success"
+        },
+        {
+          "name": "error",
+          "info": "Error"
+        }
+      ]
+    },
+    {
+      "name": "searchFilms",
+      "description": "Search films.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Your Pixabay API key.",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "A URL encoded search term. If omitted, all videos are returned. This value may not exceed 100 characters. Example: `yellow+flower`",
+          "required": false
+        },
+        {
+          "name": "lang",
+          "type": "String",
+          "info": "Language code of the language to be searched in. Accepted values: `cs, da, de, en, es, fr, id, it, hu, nl, no, pl, pt, ro, sk, fi, sv, tr, vi, th, bg, ru, el, ja, ko, zh`. Default: `en`",
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "info": "ID or a comma separated list of values for retrieving specific videos.",
+          "required": false
+        },
+        {
+          "name": "orientation",
+          "type": "String",
+          "info": "Whether an video is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "String",
+          "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
+          "required": false
+        },
+        {
+          "name": "minWidth",
+          "type": "String",
+          "info": "Minimum video width. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "minHeight",
+          "type": "String",
+          "info": "Minimum video height. Default: `0`",
+          "required": false
+        },
+        {
+          "name": "editorsChoice",
+          "type": "String",
+          "info": "Select videos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "safesearch",
+          "type": "String",
+          "info": "A flag indicating that only videos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
+          "required": false
+        },
+        {
+          "name": "order",
+          "type": "String",
+          "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
+          "required": false
+        },
+        {
+          "name": "page",
+          "type": "String",
+          "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "type": "String",
+          "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "success",
+          "info": "Success"
+        },
+        {
+          "name": "error",
+          "info": "Error"
+        }
+      ]
+    }
+  ]
+}

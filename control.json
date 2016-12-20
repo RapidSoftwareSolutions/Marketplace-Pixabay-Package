@@ -1,0 +1,160 @@
+{
+    "searchImages": {
+        "url": "https://pixabay.com/api/",
+        "method": "GET",
+        "args": {
+            "credentials|apiKey": "$key",
+            "String|query": "q",
+            "String|lang": "lang",
+            "String|id": "id",
+            "Boolean|highResolution": "highResolution",
+            "String|orientation": "orientation",
+            "String|category": "category",
+            "String|minWidth": "min_width",
+            "String|minHeight": "minHeight",
+            "String|editorsChoice": "editors_choice",
+            "String|safesearch": "safesearch",
+            "String|order": "order",
+            "String|page": "page",
+            "String|perPage": "perPage"
+        },
+        "values": {
+            "image_type": "all"
+        }
+    },
+    "searchPhotos": {
+        "url": "https://pixabay.com/api/",
+        "method": "GET",
+        "args": {
+            "credentials|apiKey": "$key",
+            "String|query": "q",
+            "String|lang": "lang",
+            "String|id": "id",
+            "Boolean|highResolution": "highResolution",
+            "String|orientation": "orientation",
+            "String|category": "category",
+            "String|minWidth": "min_width",
+            "String|minHeight": "minHeight",
+            "String|editorsChoice": "editors_choice",
+            "String|safesearch": "safesearch",
+            "String|order": "order",
+            "String|page": "page",
+            "String|perPage": "perPage"
+        },
+        "values": {
+            "image_type": "photo"
+        }
+    },
+    "searchIllustrations": {
+        "url": "https://pixabay.com/api/",
+        "method": "GET",
+        "args": {
+            "credentials|apiKey": "$key",
+            "String|query": "q",
+            "String|lang": "lang",
+            "String|id": "id",
+            "Boolean|highResolution": "highResolution",
+            "String|orientation": "orientation",
+            "String|category": "category",
+            "String|minWidth": "min_width",
+            "String|minHeight": "minHeight",
+            "String|editorsChoice": "editors_choice",
+            "String|safesearch": "safesearch",
+            "String|order": "order",
+            "String|page": "page",
+            "String|perPage": "perPage"
+        },
+        "values": {
+            "image_type": "illustration"
+        }
+    },
+    "searchVectorImages": {
+        "url": "https://pixabay.com/api/",
+        "method": "GET",
+        "args": {
+            "credentials|apiKey": "$key",
+            "String|query": "q",
+            "String|lang": "lang",
+            "String|id": "id",
+            "Boolean|highResolution": "highResolution",
+            "String|orientation": "orientation",
+            "String|category": "category",
+            "String|minWidth": "min_width",
+            "String|minHeight": "minHeight",
+            "String|editorsChoice": "editors_choice",
+            "String|safesearch": "safesearch",
+            "String|order": "order",
+            "String|page": "page",
+            "String|perPage": "perPage"
+        },
+        "values": {
+            "image_type": "vector"
+        }
+    },
+    "searchVideos": {
+        "url": "https://pixabay.com/api/videos/",
+        "method": "GET",
+        "args": {
+            "credentials|apiKey": "$key",
+            "String|query": "q",
+            "String|lang": "lang",
+            "String|id": "id",
+            "String|orientation": "orientation",
+            "String|category": "category",
+            "String|minWidth": "min_width",
+            "String|minHeight": "minHeight",
+            "String|editorsChoice": "editors_choice",
+            "String|safesearch": "safesearch",
+            "String|order": "order",
+            "String|page": "page",
+            "String|perPage": "perPage"
+        },
+        "values": {
+            "video_type": "all"
+        }
+    },
+    "searchAnimations": {
+        "url": "https://pixabay.com/api/videos/",
+        "method": "GET",
+        "args": {
+            "credentials|apiKey": "$key",
+            "String|query": "q",
+            "String|lang": "lang",
+            "String|id": "id",
+            "String|orientation": "orientation",
+            "String|category": "category",
+            "String|minWidth": "min_width",
+            "String|minHeight": "minHeight",
+            "String|editorsChoice": "editors_choice",
+            "String|safesearch": "safesearch",
+            "String|order": "order",
+            "String|page": "page",
+            "String|perPage": "perPage"
+        },
+        "values": {
+            "video_type": "animation"
+        }
+    },
+    "searchFilms": {
+        "url": "https://pixabay.com/api/videos/",
+        "method": "GET",
+        "args": {
+            "credentials|apiKey": "$key",
+            "String|query": "q",
+            "String|lang": "lang",
+            "String|id": "id",
+            "String|orientation": "orientation",
+            "String|category": "category",
+            "String|minWidth": "min_width",
+            "String|minHeight": "minHeight",
+            "String|editorsChoice": "editors_choice",
+            "String|safesearch": "safesearch",
+            "String|order": "order",
+            "String|page": "page",
+            "String|perPage": "perPage"
+        },
+        "values": {
+            "video_type": "films"
+        }
+    }
+}
