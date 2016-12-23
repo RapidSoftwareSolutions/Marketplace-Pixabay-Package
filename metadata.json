@@ -1,14 +1,14 @@
 {
   "package": "Pixabay",
   "tagline": "Pixabay API Package",
-  "description": "",
+  "description": "Free images and videos you can use anywhere",
   "image": "http://logo.clearbit.com/pixabay.com?s=320",
   "keywords": [
     "API"
   ],
   "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-Pixabay-Package",
   "accounts": {
-    "domain": "",
+    "domain": "pixabay.com",
     "credentials": [
       "apiKey"
     ]
