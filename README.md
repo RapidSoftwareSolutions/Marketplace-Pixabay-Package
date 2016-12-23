@@ -1,6 +1,6 @@
 # Pixabay Package
 
-* Domain: 
+* Domain: pixabay.com
 * Credentials: apiKey
 
 ## How to get credentials: 
