@@ -24,7 +24,7 @@ app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(metadata); });
 for(let func in control) {
     let options = {
         query:    {},
-        debug:    true
+        //debug:    true
     };
 
     let {
