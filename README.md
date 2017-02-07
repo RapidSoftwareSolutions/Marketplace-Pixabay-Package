@@ -1,5 +1,7 @@
-# Pixabay Package
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/Pixabay/functions?utm_source=RapidAPIGitHub_PixabayFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
 
+# Pixabay Package
+Get license-free stock images, vectors and illustrations.
 * Domain: pixabay.com
 * Credentials: apiKey
 
