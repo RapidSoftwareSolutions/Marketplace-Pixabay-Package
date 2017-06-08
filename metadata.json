@@ -50,55 +50,58 @@
         },
         {
           "name": "orientation",
-          "type": "String",
+          "type": "Select",
+          "options": ["all", "horizontal", "vertical"],
           "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
           "required": false
         },
         {
           "name": "category",
-          "type": "String",
+          "type": "Select",
+          "options": ["fashion", "nature", "backgrounds", "science", "education", "people", "feelings", "religion", "health", "places", "animals", "industry", "food", "computer", "sports", "transportation", "travel", "buildings", "business", "music"],
           "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
           "required": false
         },
         {
           "name": "minWidth",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image width. Default: `0`",
           "required": false
         },
         {
           "name": "minHeight",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image height. Default: `0`",
           "required": false
         },
         {
           "name": "editorsChoice",
-          "type": "String",
+          "type": "Boolean",
           "info": "Select images that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "safesearch",
-          "type": "String",
+          "type": "Boolean",
           "info": "A flag indicating that only images suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "order",
-          "type": "String",
+          "type": "Select",
+          "options": ["popular", "latest"],
           "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
           "required": false
         },
         {
           "name": "page",
-          "type": "String",
+          "type": "Number",
           "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
           "required": false
         },
         {
           "name": "perPage",
-          "type": "String",
+          "type": "Number",
           "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
           "required": false
         }
@@ -150,55 +153,58 @@
         },
         {
           "name": "orientation",
-          "type": "String",
+          "type": "Select",
+          "options": ["all", "horizontal", "vertical"],
           "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
           "required": false
         },
         {
           "name": "category",
-          "type": "String",
+          "type": "Select",
+          "options": ["fashion", "nature", "backgrounds", "science", "education", "people", "feelings", "religion", "health", "places", "animals", "industry", "food", "computer", "sports", "transportation", "travel", "buildings", "business", "music"],
           "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
           "required": false
         },
         {
           "name": "minWidth",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image width. Default: `0`",
           "required": false
         },
         {
           "name": "minHeight",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image height. Default: `0`",
           "required": false
         },
         {
           "name": "editorsChoice",
-          "type": "String",
+          "type": "Boolean",
           "info": "Select photos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "safesearch",
-          "type": "String",
+          "type": "Boolean",
           "info": "A flag indicating that only photos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "order",
-          "type": "String",
+          "type": "Select",
+          "options": ["popular", "latest"],
           "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
           "required": false
         },
         {
           "name": "page",
-          "type": "String",
+          "type": "Number",
           "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
           "required": false
         },
         {
           "name": "perPage",
-          "type": "String",
+          "type": "Number",
           "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
           "required": false
         }
@@ -250,55 +256,58 @@
         },
         {
           "name": "orientation",
-          "type": "String",
+          "type": "Select",
+          "options": ["all", "horizontal", "vertical"],
           "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
           "required": false
         },
         {
           "name": "category",
-          "type": "String",
+          "type": "Select",
+          "options": ["fashion", "nature", "backgrounds", "science", "education", "people", "feelings", "religion", "health", "places", "animals", "industry", "food", "computer", "sports", "transportation", "travel", "buildings", "business", "music"],
           "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
           "required": false
         },
         {
           "name": "minWidth",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image width. Default: `0`",
           "required": false
         },
         {
           "name": "minHeight",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image height. Default: `0`",
           "required": false
         },
         {
           "name": "editorsChoice",
-          "type": "String",
+          "type": "Boolean",
           "info": "Select illustrations that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "safesearch",
-          "type": "String",
+          "type": "Boolean",
           "info": "A flag indicating that only illustrations suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "order",
-          "type": "String",
+          "type": "Select",
+          "options": ["popular", "latest"],
           "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
           "required": false
         },
         {
           "name": "page",
-          "type": "String",
+          "type": "Number",
           "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
           "required": false
         },
         {
           "name": "perPage",
-          "type": "String",
+          "type": "Number",
           "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
           "required": false
         }
@@ -350,55 +359,58 @@
         },
         {
           "name": "orientation",
-          "type": "String",
+          "type": "Select",
+          "options": ["all", "horizontal", "vertical"],
           "info": "Whether an image is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
           "required": false
         },
         {
           "name": "category",
-          "type": "String",
+          "type": "Select",
+          "options": ["fashion", "nature", "backgrounds", "science", "education", "people", "feelings", "religion", "health", "places", "animals", "industry", "food", "computer", "sports", "transportation", "travel", "buildings", "business", "music"],
           "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
           "required": false
         },
         {
           "name": "minWidth",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image width. Default: `0`",
           "required": false
         },
         {
           "name": "minHeight",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum image height. Default: `0`",
           "required": false
         },
         {
           "name": "editorsChoice",
-          "type": "String",
+          "type": "Boolean",
           "info": "Select images that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "safesearch",
-          "type": "String",
+          "type": "Boolean",
           "info": "A flag indicating that only images suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "order",
-          "type": "String",
+          "type": "Select",
+          "options": ["popular", "latest"],
           "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
           "required": false
         },
         {
           "name": "page",
-          "type": "String",
+          "type": "Number",
           "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
           "required": false
         },
         {
           "name": "perPage",
-          "type": "String",
+          "type": "Number",
           "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
           "required": false
         }
@@ -444,55 +456,57 @@
         },
         {
           "name": "orientation",
-          "type": "String",
+          "type": "Select",
+          "options": ["all", "horizontal", "vertical"],
           "info": "Whether an video is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
           "required": false
         },
         {
           "name": "category",
-          "type": "String",
+          "type": "Select",
+          "options": ["fashion", "nature", "backgrounds", "science", "education", "people", "feelings", "religion", "health", "places", "animals", "industry", "food", "computer", "sports", "transportation", "travel", "buildings", "business", "music"],
           "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
           "required": false
         },
         {
           "name": "minWidth",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum video width. Default: `0`",
           "required": false
         },
         {
           "name": "minHeight",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum video height. Default: `0`",
           "required": false
         },
         {
           "name": "editorsChoice",
-          "type": "String",
+          "type": "Boolean",
           "info": "Select videos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "safesearch",
-          "type": "String",
+          "type": "Boolean",
           "info": "A flag indicating that only videos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "order",
-          "type": "String",
+          "type": "Select",
           "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
           "required": false
         },
         {
           "name": "page",
-          "type": "String",
+          "type": "Number",
           "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
           "required": false
         },
         {
           "name": "perPage",
-          "type": "String",
+          "type": "Number",
           "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
           "required": false
         }
@@ -538,55 +552,58 @@
         },
         {
           "name": "orientation",
-          "type": "String",
+          "type": "Select",
+          "options": ["all", "horizontal", "vertical"],
           "info": "Whether an video is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
           "required": false
         },
         {
           "name": "category",
-          "type": "String",
+          "type": "Select",
+          "options": ["fashion", "nature", "backgrounds", "science", "education", "people", "feelings", "religion", "health", "places", "animals", "industry", "food", "computer", "sports", "transportation", "travel", "buildings", "business", "music"],
           "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
           "required": false
         },
         {
           "name": "minWidth",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum video width. Default: `0`",
           "required": false
         },
         {
           "name": "minHeight",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum video height. Default: `0`",
           "required": false
         },
         {
           "name": "editorsChoice",
-          "type": "String",
+          "type": "Boolean",
           "info": "Select videos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "safesearch",
-          "type": "String",
+          "type": "Boolean",
           "info": "A flag indicating that only videos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "order",
-          "type": "String",
+          "type": "Select",
+          "options": ["popular", "latest"],
           "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
           "required": false
         },
         {
           "name": "page",
-          "type": "String",
+          "type": "Number",
           "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
           "required": false
         },
         {
           "name": "perPage",
-          "type": "String",
+          "type": "Number",
           "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
           "required": false
         }
@@ -632,55 +649,58 @@
         },
         {
           "name": "orientation",
-          "type": "String",
+          "type": "Select",
+          "options": ["all", "horizontal", "vertical"],
           "info": "Whether an video is wider than it is tall, or taller than it is wide. Accepted values: `all`, `horizontal`, `vertical`. Default: `all`",
           "required": false
         },
         {
           "name": "category",
-          "type": "String",
+          "type": "Select",
+          "options": ["fashion", "nature", "backgrounds", "science", "education", "people", "feelings", "religion", "health", "places", "animals", "industry", "food", "computer", "sports", "transportation", "travel", "buildings", "business", "music"],
           "info": "Accepted values: `fashion`, `nature`, `backgrounds`, `science`, `education`, `people`, `feelings`, `religion`, `health`, `places`, `animals`, `industry`, `food`, `computer`, `sports`, `transportation`, `travel`, `buildings`, `business`, `music`",
           "required": false
         },
         {
           "name": "minWidth",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum video width. Default: `0`",
           "required": false
         },
         {
           "name": "minHeight",
-          "type": "String",
+          "type": "Number",
           "info": "Minimum video height. Default: `0`",
           "required": false
         },
         {
           "name": "editorsChoice",
-          "type": "String",
+          "type": "Boolean",
           "info": "Select videos that have received an Editor's Choice award. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "safesearch",
-          "type": "String",
+          "type": "Boolean",
           "info": "A flag indicating that only videos suitable for all ages should be returned. Accepted values: `true`, `false`. Default: `false`",
           "required": false
         },
         {
           "name": "order",
-          "type": "String",
+          "type": "Select",
+          "options": ["popular", "latest"],
           "info": "How the results should be ordered. Accepted values: `popular`, `latest`. Default: `popular`",
           "required": false
         },
         {
           "name": "page",
-          "type": "String",
+          "type": "Number",
           "info": "Returned search results are paginated. Use this parameter to select the page number. Default: `1`",
           "required": false
         },
         {
           "name": "perPage",
-          "type": "String",
+          "type": "Number",
           "info": "Determine the number of results per page. Accepted values: `3 - 200`. Default: `20`",
           "required": false
         }
