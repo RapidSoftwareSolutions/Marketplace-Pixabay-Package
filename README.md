@@ -9,8 +9,6 @@ Get license-free stock images, vectors and illustrations.
 0. [Login](https://pixabay.com/en/accounts/login/?next=/en/accounts/logout/) into your Pixabay account. 
 1. Navigate to [your docs page](https://pixabay.com/api/docs/#api_key) and find `key` parameter. You key will be auto-filled there if you're logged in.
 
-![](https://storage.googleapis.com/rapid-misc-files/pixabay-key.png)
-
 ## Pixabay.searchImages
 Search images.
 
