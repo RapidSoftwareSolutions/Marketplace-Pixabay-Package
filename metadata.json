@@ -13,6 +13,10 @@
       "apiKey"
     ]
   },
+  "steps": [
+    "Login to your Pixabay account (https://pixabay.com/en/accounts/login/)",
+    "Navigate to your docs page (https://pixabay.com/api/docs/#api_key) and find your key parameter. Your key will be auto-filled there if you're logged in"
+  ],
   "blocks": [
     {
       "name": "searchImages",
